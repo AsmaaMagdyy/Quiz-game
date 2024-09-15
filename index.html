@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <!-- Animate css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="h1border mx-auto rounded rounded-2 animate__animated animate__zoomInDown">
+            <div class="content rounded rounded-2">
+                <h1 class=" bg-white rounded rounded-2 d-inline-block">Quiz App</h1>
+            </div>
+        </div>
+        <div class="container  ">
+            <div class="row w-100 justify-content-center align-items-center">
+                  <div class=" w-75 quiz">
+                
+                <form id="quizOptions" class="animate__animated animate__fadeInBottomLeft">
+                    <div class="form-floating mt-3">
+                        <select class="form-select" id="categoryMenu" aria-label="Floating label select example">
+                            <option selected value="">Any Category</option>
+                            <option value="9">General knowledge</option>
+                            <option value="27">Animals</option>
+                            <option value="19">Science:Mathmatics</option>
+                            <option value="18">Science:Computers</option>
+                            <option value="22">Geography</option>
+                        </select>
+                        <label for="categoryMenu">Choose Category</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <select class="form-select" id="level" aria-label="Floating label select example">
+                            <option selected value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+    
+                        </select>
+                        <label for="level">Choose Difficulty level</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="number" class="form-control" id="numOfQu" placeholder="Number Of Question">
+                        <label for="floatingInput">Number Of Question</label>
+                    </div>
+                    <button id="startQuiz" class="btn btn-primary w-100">Start</button>
+                </form>
+                
+            </div>
+            </div>
+          
+        
+        </div>
+        <div class="questions mt-4 animate__animated animate__bounceIn ">
+            <div class="container">
+                <div class="row" id="questionBody">
+                    <!-- <div class="bg-white p-4 rounded rounded-2  mx-auto text-center">
+                        <div class="d-flex justify-content-between">
+                            <span>category</span>
+                            <span>1 of 14</span>
+                        </div>
+                        <h4 class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2">
+                            <li class="w-49 border border-2 p-3 border-black rounded rounded-pill fw-semibold ">Lorem ipsum dolor sit.</li>
+                            <li class="w-49 border border-2 p-3 border-black rounded rounded-pill fw-semibold">Lorem ipsum dolor sit.</li>
+                            <li class="w-49 border border-2 p-3 border-black rounded rounded-pill fw-semibold">Lorem ipsum dolor sit.</li>
+                            <li class="w-49 border border-2 p-3 border-black rounded rounded-pill fw-semibold">Lorem ipsum dolor sit.</li>
+                           
+                            
+                        </ul>
+                        <div class="score fw-semibold fs-5">Score: 0</div>
+                    </div> -->
+                    
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
